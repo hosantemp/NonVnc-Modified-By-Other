@@ -28,6 +28,37 @@ RUN set -ex; \
         net-tools \
         curl \
         git \
+	curl \
+	git \
+	libffi-dev \
+	libjpeg-dev \
+	libjpeg-turbo8-dev \
+	libwebp-dev \
+	python3-lxml \
+	postgresql \
+	postgresql-client \
+	python3-psycopg2 \
+	libpq-dev \
+	libcurl4-openssl-dev \
+	libxml2-dev \
+	libxslt1-dev \
+	python3-pip \
+	python3-sqlalchemy \
+	openssl \
+	wget \
+	python3 \
+	python3-dev \
+	libreadline-dev \
+	libyaml-dev \
+	gcc \
+	zlib1g \
+	ffmpeg \
+	libssl-dev \
+	libgconf-2-4 \
+	libxi6 \
+	unzip \
+	libopus0 \
+	libopus-dev \
 	    wget \
         libtasn1-3-bin \
         libglu1-mesa \
@@ -56,8 +87,6 @@ RUN echo "ubuntu:ubuntu" | chpasswd && \
     adduser ubuntu sudo && \
     sudo usermod -a -G sudo ubuntu
 
-RUN sudo add-apt-repository ppa:obsproject/obs-studio \
-     && sudo apt-get update && sudo apt-get install -y obs-studio
 
 COPY . /app
 
