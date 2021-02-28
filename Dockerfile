@@ -54,6 +54,8 @@ RUN echo "ubuntu:ubuntu" | chpasswd && \
     adduser ubuntu sudo && \
     sudo usermod -a -G sudo ubuntu
 
+RUN sudo apt install python3 && sudo apt install python3-pip
+
 RUN sudo add-apt-repository ppa:obsproject/obs-studio \
      && sudo apt-get update && sudo apt-get install -y obs-studio
 
