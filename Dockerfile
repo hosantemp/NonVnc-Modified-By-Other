@@ -70,8 +70,6 @@ RUN set -ex; \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/*
 
-RUN sudo apt update && sudo apt install neofetch
-
 ENV HOME=/root \
     DEBIAN_FRONTEND=noninteractive \
     LANG=en_US.UTF-8 \
