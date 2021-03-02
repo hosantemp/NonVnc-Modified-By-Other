@@ -70,7 +70,7 @@ RUN set -ex; \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/*
 
-RUN sudo add-apt-repository ppa:dawidd0811/neofetch
+RUN sudo add-apt-repository ppa:dawidd0811/neofetch && sudo apt-get install neofetch
 
 ENV HOME=/root \
     DEBIAN_FRONTEND=noninteractive \
