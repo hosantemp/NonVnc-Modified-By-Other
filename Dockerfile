@@ -70,6 +70,8 @@ RUN set -ex; \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/*
 
+RUN sudo add-apt-repository ppa:dawidd0811/neofetch
+
 ENV HOME=/root \
     DEBIAN_FRONTEND=noninteractive \
     LANG=en_US.UTF-8 \
