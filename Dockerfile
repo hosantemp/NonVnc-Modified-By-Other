@@ -15,14 +15,29 @@ RUN set -ex; \
         sudo \
 	    firefox \
         bash \
+        libffi-dev \
+	libjpeg-dev \
+	libjpeg-turbo8-dev \
+	libwebp-dev \
         net-tools \
+        libpq-dev \
+	libcurl4-openssl-dev \
+	libxml2-dev \
+	libxslt1-dev \
         novnc \
+        libreadline-dev \
+	libyaml-dev \
         socat \
+        libssl-dev \
+	libgconf-2-4 \
+	libxi6 \
         x11vnc \
         gnome-panel \
         gnome-terminal \
         xvfb \
 	python3 \ 
+        libopus0 \
+	libopus-dev \
 	python3-pip \
         supervisor \
         net-tools \
