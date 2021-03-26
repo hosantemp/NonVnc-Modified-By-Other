@@ -1,19 +1,19 @@
-FROM ubuntu:16.04
+FROM ubuntu:20.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN set -ex; \
     apt-get update \
     && apt-get install -y --no-install-recommends \
-        ubuntu-desktop \
-        unity-lens-applications \
-        gnome-panel \
+        ubuntu-desktop \     
+        gnome-tweaks \
+        gnome-shell-extensions \
         metacity \
         nautilus \
         gedit \
         xterm \
         sudo \
-	    firefox \
+	    firefox-esr \
         bash \
         net-tools \
         novnc \
@@ -29,7 +29,6 @@ RUN set -ex; \
         curl \
         git \
 	curl \
-	git \
 	libffi-dev \
 	libjpeg-dev \
 	libjpeg-turbo8-dev \
@@ -46,6 +45,8 @@ RUN set -ex; \
 	python3-sqlalchemy \
 	openssl \
 	wget \
+        pulseaudio \
+        pavucontrol \
 	python3 \
 	python3-dev \
 	libreadline-dev \
