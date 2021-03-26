@@ -13,7 +13,7 @@ RUN set -ex; \
         gedit \
         xterm \
         sudo \
-	    firefox-esr \
+	    firefox \
         bash \
         net-tools \
         novnc \
@@ -28,19 +28,11 @@ RUN set -ex; \
         net-tools \
         curl \
         git \
-	curl \
-	libffi-dev \
-	libjpeg-dev \
-	libjpeg-turbo8-dev \
-	libwebp-dev \
+	curl \	
 	python3-lxml \
 	postgresql \
 	postgresql-client \
-	python3-psycopg2 \
-	libpq-dev \
-	libcurl4-openssl-dev \
-	libxml2-dev \
-	libxslt1-dev \
+	python3-psycopg2 \	
 	python3-pip \
 	python3-sqlalchemy \
 	openssl \
@@ -48,23 +40,15 @@ RUN set -ex; \
         pulseaudio \
         pavucontrol \
 	python3 \
-	python3-dev \
-	libreadline-dev \
-	libyaml-dev \
+	python3-dev \		
 	gcc \
 	zlib1g \
-	ffmpeg \
-	libssl-dev \
-	libgconf-2-4 \
+	ffmpeg \	
 	libxi6 \
 	unzip \
 	libopus0 \
 	libopus-dev \
-	    wget \
-        libtasn1-3-bin \
-        libglu1-mesa \
-        libqt5webkit5 \
-        libqt5x11extras5 \
+	    wget \        
         qml-module-qtquick-controls \
         qml-module-qtquick-dialogs \
     && apt-get autoclean \
