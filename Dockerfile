@@ -5,7 +5,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN set -ex; \
     apt-get update \
     && apt-get install -y --no-install-recommends \
-        ubuntu-desktop \ 
+        ubuntu-desktop \
         gnome-tweaks \
         gnome-shell-extensions \
         metacity \
